@@ -10,7 +10,7 @@ def input_joonda():
     while True:
         name = str(input("NAME?"))
         if name == "":
-            print("WTF ARE YOU ACTUALLY STUPID DOES "
+            print("...are you actually stupid DOES "
                   "THIS PERSON NOT HAVE A NAME?")
         else:
             break

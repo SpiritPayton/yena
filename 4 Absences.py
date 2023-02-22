@@ -1,21 +1,19 @@
 """program to PUNISH those who are absent"""
 
-peoples = {
-
-}
+peoples = {}
 
 
 def input_joonda():
     name = None
     while True:
-        name = str(input("NAME?"))
+        name = str(input("NAME?: "))
         if name == "":
             print("...are you actually stupid DOES "
                   "THIS PERSON NOT HAVE A NAME?")
         else:
             break
     while True:
-        absenses = input("ABSENSES?!?!?!")
+        absenses = input("ABSENSES?!?!?!: ")
         try:
             peoples[name] = int(absenses)
             return
@@ -23,9 +21,9 @@ def input_joonda():
             print("ENTER A NUMBER OR I WILL STAB YOU")
 
 
-def initial_loop():
+def main():
     while True:
-        should_continue = input("INPUT '$' TO NOT INPUT DATA OR PRESS "
+        should_continue = input("\nINPUT '$' TO NOT INPUT DATA OR PRESS "
                                 "LITERALLY ANYTHING ELSE TO INPUT DATA::: ")
         if should_continue == "$":
             print("GO AWAY\n\n")
@@ -55,10 +53,10 @@ def initial_loop():
                   f"(T.W.I.N.K for short) ꒱\n{zero_absenses}")
             print(f"\n⇢ ˗ˏˋ Staycies who were above the average absenses "
                   f"(L.O.O.N.A for short) ࿐ྂ\n{above_average}")
-            print("\n( :̲̅:̲̅:[̲̅: Thank you for your time! Came again! :]̲̅:̲̅:̲̅:̲̅)")
+            print("\n( :̲̅:̲̅:[̲̅: Thank you for your time! Came again! :]̲̅:̲̅:̲̅:̲̅)\n\nProcess finished with exit code 0")
             return
         else:
             input_joonda()
 
 
-initial_loop()
+main()

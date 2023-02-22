@@ -18,14 +18,14 @@ def high_bidder(bidding_log):
 
 
 while not bidding_end:
+    print("welcome to Lady Ningguang's silent auction!! today we are bidding on the Jade Chamber.")
     name = input("GIVE ME your name!!!: ")
-    bid = int(input("how much would you like to bid?\n>> $"))
+    bid = int(input("how much would you like to bid?\n> $"))
     user_bids[name] = bid
-    add_bidders = input("any other bidders, y or n?!?!?!?\n>> ").lower()
+    add_bidders = input("any other bidders, y or n?!?!?!?: ").lower()
     if add_bidders == "n":
         bidding_finished = True
         high_bidder(user_bids)
         break
     elif add_bidders == "y":
-        clear()
 
